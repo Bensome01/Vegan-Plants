@@ -1,0 +1,38 @@
+
+> Configure project :
+Architect Plugin: 3.4.164
+Architectury Loom: 1.13.469
+This version of Architectury Loom is in beta! Please report any issues you encounter: https://github.com/architectury/architectury-loom/issues
+
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :neoforge:exportClasspath UP-TO-DATE
+> Task :common:exportClasspath UP-TO-DATE
+> Task :common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :neoforge:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin NO-SOURCE
+> Task :neoforge:processResources UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :neoforge:processIncludeJars UP-TO-DATE
+> Task :neoforge:sourcesJar UP-TO-DATE
+> Task :neoforge:processTestResources NO-SOURCE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :neoforge:validateAccessWidener NO-SOURCE
+> Task :compileTestKotlin NO-SOURCE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build UP-TO-DATE
+> Task :common:processResources NO-SOURCE
+> Task :common:processIncludeJars UP-TO-DATE
+> Task :common:sourcesJar UP-TO-DATE
+> Task :common:remapSourcesJar UP-TO-DATE
+> Task :common:processTestResources NO-SOURCE
+> Task :common:validateAccessWidener NO-SOURCE
+
+> Task :common:compileKotlin FAILED
+10 actionable tasks: 1 executed, 9 up-to-date

@@ -1,0 +1,31 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '2.2.20'
+}
+architectury {
+    common rootProject.enabled_platforms.split(',')
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/vegan_plants.accesswidener")
+}
+
+dependencies {
+    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
+    // which get remapped to the correct annotations on each platform.
+    // Do NOT use other classes from Fabric Loader.
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    // Architectury API. This is optional, and you can comment it out if you don't need it.
+    modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+
+    modApi "fuzs.forgeconfigapiport:forgeconfigapiport-common-neoforgeapi:${rootProject.property("forgeconfigapiport_version")}"
+}
+repositories {
+    mavenCentral()
+    maven {setUrl("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")}
+}
+kotlin {
+    jvmToolchain(21)
+}

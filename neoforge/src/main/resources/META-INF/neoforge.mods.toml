@@ -1,0 +1,42 @@
+modLoader = "kotlinforforge"
+loaderVersion = "[5.3,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "vegan_plants"
+version = "${version}"
+displayName = "Vegan Plants"
+authors = "Winston"
+description = '''
+A mod for convenient vegan feathers in the form of a crop.
+'''
+#logoFile = ""
+
+[[dependencies.vegan_plants]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vegan_plants]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vegan_plants]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.vegan_plants]]
+modId = "kotlinforforge"
+type="required"
+versionRange = "[5.8.0,)"
+ordering = "AFTER"
+side = "BOTH"
