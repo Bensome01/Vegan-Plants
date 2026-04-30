@@ -25,8 +25,6 @@ import net.minecraft.world.level.LevelReader
 import net.minecraft.world.level.block.state.properties.BlockStateProperties
 
 class FeatherCropBlock(pProperties: Properties) : CropBlock(pProperties) {
-    val MAX_AGE: Int = 15
-    val AGE: IntegerProperty = BlockStateProperties.AGE_15
     private val SHAPE_BY_AGE = arrayOf<VoxelShape>(
         box(0.0, 0.0, 0.0, 16.0, 3.0, 16.0),
         box(0.0, 0.0, 0.0, 16.0, 3.0, 16.0),
@@ -113,5 +111,10 @@ class FeatherCropBlock(pProperties: Properties) : CropBlock(pProperties) {
             return
         }
         super.randomTick(blockState, serverLevel, blockPos, randomSource)
+    }
+
+    companion object {
+        val MAX_AGE: Int = 15
+        val AGE: IntegerProperty = BlockStateProperties.AGE_15
     }
 }
