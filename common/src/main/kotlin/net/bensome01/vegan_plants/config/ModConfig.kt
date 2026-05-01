@@ -16,4 +16,9 @@ object ModConfig {
         COMMON_SPEC = commonConfigSpec
         COMMON = commonConfig
     }
+
+    @JvmStatic
+    public fun getServerSpec(): ModConfigSpec {
+        return SERVER_SPEC
+    }
 }
