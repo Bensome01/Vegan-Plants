@@ -1,6 +1,7 @@
 package net.bensome01.vegan_plants.registry
 
 import dev.architectury.registry.registries.DeferredRegister
+import dev.architectury.registry.registries.RegistrySupplier
 import net.bensome01.vegan_plants.VeganPlants
 import net.bensome01.vegan_plants.item.FeatherSeeds
 import net.minecraft.core.registries.Registries
@@ -17,7 +18,7 @@ object ModItemRegistry {
         Registries.ITEM
     )
 
-    val FEATHER_SEEDS = ITEMS.register("feather_seeds") {
+    val FEATHER_SEEDS: RegistrySupplier<ItemNameBlockItem> = ITEMS.register("feather_seeds") {
         ItemNameBlockItem(ModBlockRegistry.FEATHER_CROP.get(), Item.Properties().`arch$tab`(creativeTab))
     }
 
