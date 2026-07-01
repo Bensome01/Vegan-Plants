@@ -1,0 +1,10 @@
+{
+  "values": {
+    "vegan_plants:feather_seeds": {
+      "chance": 0.3
+    },
+    "vegan_plants:wild_feather": {
+      "chance": 0.3
+    }
+  }
+}

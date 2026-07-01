@@ -3,6 +3,7 @@ package net.bensome01.vegan_plants.neoforge;
 import net.bensome01.vegan_plants.VeganPlants;
 import net.bensome01.vegan_plants.config.ModConfig;
 import net.bensome01.vegan_plants.neoforge.loot.ModLootModifiers;
+import net.bensome01.vegan_plants.registry.ComposterRegistry;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -19,5 +20,11 @@ public final class VeganPlantsNeoForge{
         ModLootModifiers.register(bus);
 
         VeganPlants.init();
+
+        bus.addListener(this::commonSetup);
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+//        event.enqueueWork(ComposterRegistry::register);
     }
 }

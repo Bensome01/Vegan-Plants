@@ -16,6 +16,7 @@ object VeganPlants {
     fun init() {
         ModBlockRegistry.register()
         ModItemRegistry.register()
+        //compost must be registered in Fabric and Neoforge separately
 //        ComposterRegistry.register()
     }
 }
